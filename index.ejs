@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+
+    <div>
+      <h1>Add Product</h1>
+
+      <form action="http://localhost:3000/viewProduct" method="post">
+        <h1>View product ID</h1>
+        <input name="pid" type="number" />
+        <input type="submit" value="viewProduct" />
+      </form>
+
+      <form action="http://localhost:3000/addProduct" method="post">
+        <label>Add new product</label>
+
+        <label for="pid">Enter product ID: </label>
+        <input type="number" name="pid" />
+        <br />
+
+        //name
+        <label for="name">Enter product name: </label>
+        <input type="text" name="name" />
+        <br />
+
+
+        //brand
+        <label for="brand">Enter product brand: </label>
+        <input type="text" name="brand" />
+        <br />
+
+
+        //mfd
+        <label for="mfd">Enter product mfd: </label>
+        <input type="text" name="mfd" />
+        <br />
+
+        //mrp
+        <label for="mrp">Enter product mrp: </label>
+        <input type="text" name="mrp" />
+        <br />
+
+
+
+        //exp_date
+        <label for="exp_date">Enter product exp_date: </label>
+        <input type="text" name="exp_date" />
+        <br />
+
+
+        //req_cold_st
+        <label for="req_cold_st">Enter product req_cold_st: </label>
+        <input type="text" name="req_cold_st" />
+        <br />
+
+
+        //product_temp
+        <label for="product_temp">Enter product product_temp: </label>
+        <input type="text" name="product_temp" />
+        <br />
+
+
+        //product_loc
+        <label for="product_loc">Enter product product_loc: </label>
+        <input type="text" name="product_loc" />
+        <br />
+
+        //status
+        <label for="status">Enter product status: </label>
+        <input type="text" name="status" />
+        <br />
+
+        <input type="submit" value="addProduct" />
+
+
+
+
+      </form>
+
+
+    </div>
+  </body>
+</html>
